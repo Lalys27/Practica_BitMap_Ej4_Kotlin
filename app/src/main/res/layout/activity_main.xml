@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayoutMainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+   <ImageView
+       android:id="@+id/imageViewSourceBitmap"
+       android:layout_width="fill_parent"
+       android:layout_height="0dp"
+       android:layout_weight="3.5"
+       android:contentDescription="@string/imageViewSourceBitmapDescription"
+       android:paddingBottom="5dp"
+       android:paddingLeft="10dp"
+       android:paddingRight="10dp"
+       android:paddingTop="10dp" />
+
+   <ImageView
+       android:id="@+id/imageViewResultBitmap"
+       android:layout_width="fill_parent"
+       android:layout_height="0dp"
+       android:layout_weight="3.5"
+       android:contentDescription="@string/imageViewResulBitmapDescription"
+       android:paddingBottom="10dp"
+       android:paddingLeft="10dp"
+       android:paddingRight="10dp"
+       android:paddingTop="5dp" />
+
+   <ProgressBar
+       android:id="@+id/progressBar"
+       style="?android:attr/progressBarStyleHorizontal"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="0.25"
+       android:progress="1"/>
+
+   <LinearLayout
+       android:id="@+id/LinearLayoutButtons"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1.5" >
+
+      <Button
+          android:id="@+id/buttonDrawBitmap"
+          style="?android:attr/borderlessButtonStyle"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@android:color/holo_orange_light"
+          android:text="@string/buttonDrawBitmapText" />
+
+      <Button
+          android:id="@+id/buttonConvertBitmap"
+          style="?android:attr/borderlessButtonStyle"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@android:color/holo_orange_light"
+          android:text="@string/buttonConvertBitmapText" />
+
+      <Button
+          android:id="@+id/buttonFourier"
+          style="?android:attr/borderlessButtonStyle"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@android:color/holo_orange_light"
+          android:text="@string/buttonFourierText" />
+
+   </LinearLayout>
+</LinearLayout>

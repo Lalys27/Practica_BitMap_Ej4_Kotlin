@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+   xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item android:id="@+id/itemMenuLoadBitmap" android:title="@string/itemMenuLoadBitmapTitle" />
+   <item android:id="@+id/itemMenuExitApp" android:title="@string/itemMenuExitApp"/>
+</menu>
